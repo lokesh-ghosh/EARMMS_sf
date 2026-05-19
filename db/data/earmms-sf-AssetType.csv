@@ -1,0 +1,6 @@
+typeId,typeName,category,isCritical,standardSLAHours
+LAPTOP,Laptop Computer,IT,true,8
+MONITOR,Monitor / Display,IT,false,24
+DESKTOP,Desktop Computer,IT,true,12
+CHAIR,Office Chair,FURNITURE,false,72
+PROJECTOR,Projector,ELECTRONICS,false,48

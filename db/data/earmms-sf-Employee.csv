@@ -1,0 +1,6 @@
+employeeId,name,email,department,designation,manager_employeeId,isVIP
+E001,Arjun Mehta,arjun.mehta@company.com,IT,Senior Manager,,true
+E002,Priya Sharma,priya.sharma@company.com,IT,Software Engineer,E001,false
+E003,Rahul Verma,rahul.verma@company.com,Finance,Financial Analyst,E001,false
+E004,Sneha Patel,sneha.patel@company.com,HR,HR Business Partner,E001,false
+E005,Kiran Nair,kiran.nair@company.com,IT,Junior Developer,E002,false
