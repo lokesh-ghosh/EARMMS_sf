@@ -1,14 +1,19 @@
 {
-  "name": "EARMMS_sf",
+  "name": "earmms-sf",
   "version": "1.0.0",
   "dependencies": {
-    "@sap/cds": "^9"
+    "@sap/cds": "^9",
+    "@cap-js/hana": "^2"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.4"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "build": "cds build --production"
   },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
 }
