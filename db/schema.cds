@@ -29,6 +29,7 @@ entity Asset {
       warrantyExpiry : Date;
       currentOwner   : Association to Employee;
       location       : String(100);
+      status         : String(20);   // Active | UnderRepair | InMitigation | Retired
 }
 
 entity Technician {
@@ -36,9 +37,21 @@ entity Technician {
       name           : String(100);
       email          : String(100);
       specialization : String(50);   // Laptop | Networking | Furniture
+      currentLoad    : Integer;
 }
 
 entity SpareAssetPool {
-  key poolId : UUID;
-      asset  : Association to Asset;
+  key poolId                   : UUID;
+      asset                    : Association to Asset;
+      availabilityStatus       : String(20);   // Available | Reserved | InUse
+      reservedFor_mitigationId : UUID;
+}
+
+entity SLAConfiguration {
+  key configId            : UUID;
+      assetType           : Association to AssetType;
+      severity            : String(10);   // Low | Medium | High
+      responseTimeHours   : Integer;
+      resolutionTimeHours : Integer;
+      mitigationSLAHours  : Integer;
 }

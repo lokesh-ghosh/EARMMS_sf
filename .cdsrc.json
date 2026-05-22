@@ -1,5 +1,6 @@
 {
   "requires": {
+    "auth": "dummy",
     "db": {
       "[development]": {
         "kind": "sqlite",
